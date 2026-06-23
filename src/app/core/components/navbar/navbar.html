@@ -1,0 +1,88 @@
+<div>
+  <nav class="navbar navbar-expand-lg p-3 rounded-2 bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand fs-4 fw-bold" routerLink="/">
+        My CV
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item fw-semibold fs-6 mx-md-3">
+            <a
+              routerLink="/"
+              routerLinkActive="text-danger"
+              [routerLinkActiveOptions]="{ exact: true }"
+              class="nav-link text-black"
+            >
+              <i class="fa-solid fa-house me-2"></i>
+              Home
+            </a>
+          </li>
+
+          <li class="nav-item fw-semibold fs-6 mx-md-3">
+            <a
+              routerLink="/about"
+              routerLinkActive="text-danger"
+              class="nav-link text-black"
+            >
+              <i class="fa-solid fa-user me-2"></i>
+              About
+            </a>
+          </li>
+
+          <li class="nav-item fw-semibold fs-6 mx-md-3">
+            <a
+              routerLink="/works"
+              routerLinkActive="text-danger"
+              class="nav-link text-black"
+            >
+              <i class="fa-solid fa-briefcase me-2"></i>
+              Works
+            </a>
+          </li>
+
+          <li class="nav-item fw-semibold fs-6 mx-md-3">
+            <a
+              routerLink="/contact"
+              routerLinkActive="text-danger"
+              class="nav-link text-black"
+            >
+              <i class="fa-solid fa-envelope me-2"></i>
+              Contact
+            </a>
+          </li>
+        </ul>
+
+        <div class="d-flex gap-2">
+          <a
+            [href]="resume"
+            class="btn btn-outline-primary"
+            download="Nadeem-Ali-Dotnet-Developer"
+          >
+            Download Resume
+          </a>
+
+          <a
+            class="btn btn-dark fw-bold"
+            target="_blank"
+            href="https://www.linkedin.com/in/me/"
+          >
+            Let's Talk
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div>

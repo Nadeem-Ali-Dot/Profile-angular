@@ -1,1 +1,125 @@
 /* You can add global styles to this file, and also import other style files */
+
+
+body {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  /* text-align: center; */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --body:#e4e6f5;
+    --p:#636e72;
+}
+
+body{
+    background-color: var(--body);
+    font-family: "Poppins", sans-serif;
+}
+
+p{
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  color: var(--p);
+}
+
+.curser-pointer{
+  cursor: pointer;
+}
+.bg-gray{
+  background-color: #f6f6f6;
+}
+/*start-media-query*/
+@media only screen and (max-width: 995px) {
+    #header-sm{
+        display: block;
+      }
+
+    #header-lg{
+      display: none;
+    }
+  }
+  
+  @media only screen and (min-width:956px)  {
+   #header-lg{
+      display: block;
+    }
+    #header-sm{
+        display: none;
+      }
+  }
+
+
+/* start-home */
+.lang{
+  padding: 0.8rem 2rem;
+  background-color: rgb(237, 248, 255);
+  border-radius: 4px;
+}
+
+.lang img{
+  width: 40px;
+  mix-blend-mode: inherit;
+}
+/* end-home */
+
+
+/* stat-about */
+.lang-width{
+  width: 180px;
+}
+/* end-about */
+
+
+
+#inputForm::placeholder{
+  font-size: 13px;
+  color: #bbbbbb;
+}
+
+.languages{
+  color: #636e72;
+}
+
